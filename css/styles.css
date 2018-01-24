@@ -1,0 +1,23 @@
+header {
+  background-color: #222;
+  height: 80px;
+}
+
+.hero{
+  background-image: url('../img/camera.jpg');
+  height: 800px;
+  background-size: cover;
+  text-align: center;
+  padding-top: 600px;
+}
+
+section {
+  background-color: #444;
+  height: 400px;
+
+}
+
+footer{
+  background-color: #555;
+  height: 400px;
+}
