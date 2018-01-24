@@ -1,0 +1,8 @@
+.Nav-container ul {
+  width: 500px;
+  height: 50px;
+  background: grey;
+}
+.Nav-container ul li{
+  display: inline-block;
+}
