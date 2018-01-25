@@ -7,8 +7,63 @@ a {
   color: white;
   text-decoration: none;
   margin: 15px;
-  /* float: right; */
+  font-size: 30px;
 }
+
+.home {
+  padding: 10px;
+  height: 40px;
+  width: 40px;
+  background-size: 40px;
+}
+
+ul {
+  padding: 0;
+}
+
+li {
+  list-style: none;
+}
+
+
+/* Desktop Section */
+
+.desktop-nav ul {
+  float: right;
+  margin-top: 10px;
+  padding: 0;
+  width: calc(100% - 40px);
+  text-align: right;
+}
+
+.desktop-nav li {
+  display: inline-block;
+  margin-left: 0px;
+
+}
+
+.desktop-nav a,
+.desktop-nav a:visited {
+  color: white;
+}
+
+.desktop-nav a:hover,
+.desktop-nav a:focus,
+.desktop-nav a:active {
+  opacity: 0.9;
+  color: white;
+  text-decoration: none;
+}
+
+.desktop-nav .home {
+  float: left;
+  background-color: red;
+  /* width: 120px; */
+  height: 80px;
+}
+
+
+
 
 .hero{
   background-image: url('../img/camera.jpg');
@@ -30,9 +85,12 @@ footer{
 }
 
 /* header section */
-.nav-container {
+.Home {
+  padding-left: 0px;
+}
 
+.nav-container {
   text-align: center;
-  font-size: 30px;
-  padding-top: 20px;
+  font-size: 20px;
+  padding-top: 10px;
 }
