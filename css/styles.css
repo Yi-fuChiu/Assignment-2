@@ -3,9 +3,16 @@ header {
   height: 80px;
 }
 
+a {
+  color: white;
+  text-decoration: none;
+  margin: 15px;
+  /* float: right; */
+}
+
 .hero{
   background-image: url('../img/camera.jpg');
-  height: 800px;
+  height: 1000px;
   background-size: cover;
   text-align: center;
   padding-top: 600px;
@@ -20,4 +27,12 @@ section {
 footer{
   background-color: #555;
   height: 400px;
+}
+
+/* header section */
+.nav-container {
+
+  text-align: center;
+  font-size: 30px;
+  padding-top: 20px;
 }
