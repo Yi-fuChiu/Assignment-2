@@ -97,6 +97,15 @@ p {
   height: 1000px;
   width: 100%;
   background-size: cover;
+
+  background-position: center;
+  background-image: linear-gradient(
+     20deg,
+     rgba(10, 10, 50, 0.3),
+     rgba(0, 0, 0, 0.5)
+     ),
+  url('../img/camera.jpg');
+
   text-align: center;
   padding-top: 600px;
 }
@@ -123,12 +132,24 @@ section {
 /*********************
    Footer Section
 **********************/
-.row {
-padding: 15px;
-
+footer {
+  background-color: #111;
+  height: 300px;
+  width: 100%;
 }
 
-footer{
-  background-color: #555;
-  height: 400px;
+.footer-container {
+  display: inline-block;
+  padding: 30px;
+  text-align: center;
+  font-family: 'Berkshire Swash', cursive;
+}
+
+.container h4 {
+  color: white;
+}
+
+.container a {
+  text-decoration: none;
+  /* color: #222; */
 }
