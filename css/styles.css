@@ -201,14 +201,14 @@ section {
     max-height: 300px;
 }
 .image {
-    padding-left: 150px;
-    padding-right: 150px;
     display: inline-block;
     text-align: center;
+    padding-left: 80px;
+    padding-right: 80px;
 }
 .img-container {
   padding-top: 20px;
-  padding-left: 50px;
+  text-align: center;
 }
 
 .img-container p {
