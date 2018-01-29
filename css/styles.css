@@ -135,10 +135,9 @@ p {
 
 .hero{
   background-image: url('../img/camera.jpg');
-  height: 800px;
+  height: 900px;
   width: 100%;
   background-size: cover;
-
   background-position: center;
   background-image: linear-gradient(
      20deg,
@@ -195,7 +194,6 @@ section {
 .profile {
     border-radius: 50%;
     border:5px solid #fff;
-    max-width:550px;
     height:inherit;
     width:expression(document.body.clientWidth&gt;550?"550px""auto"); /*若圖片大於550px就調整*/
     overflow:hidden;       /*超過不顯示*/
@@ -203,9 +201,10 @@ section {
     max-height: 300px;
 }
 .image {
-    padding-left: 80px;
+    padding-left: 150px;
+    padding-right: 150px;
     display: inline-block;
-      text-align: center;
+    text-align: center;
 }
 .img-container {
   padding-top: 20px;
@@ -268,6 +267,8 @@ footer {
   vertical-align:text-top;
   font-family: 'Patua One', cursive;
   font-size: 20px;
+  padding-left: 25px;
+  padding-right: 25px;
 }
 
 .container h4 {
