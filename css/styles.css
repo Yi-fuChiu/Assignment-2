@@ -4,7 +4,7 @@ font-family: 'Patua One', cursive;
 font-family: 'Russo One', sans-serif;
 font-family: 'Berkshire Swash', cursive;
 font-family: 'Paytone One', sans-serif;
-
+font-family: 'Roboto', sans-serif;
  */
 
 
@@ -33,6 +33,7 @@ font-family: 'Paytone One', sans-serif;
    text-transform: uppercase;
    font-size: 25px;
  }
+
 
 
  /*******************
@@ -80,12 +81,52 @@ font-family: 'Paytone One', sans-serif;
    float: left;
  }
 
+ /*  Mobile */
+ .mobile-nav {
+   display: none;
+   text-align: center;
+ }
+
+ .mobile-nav .homelink {
+   display: inline-block;
+ }
+
+ .mobile-nav .hamburger-container,
+ .mobile-nav .search-container {
+   vertical-align: top;
+   margin-top: 8px;
+   width: 40px;
+   display: inline-block;
+   margin-left: -4px;
+ }
+
+ .mobile-nav .logo-container {
+   display: inline-block;
+   margin-left:150px;
+   width: calc(100% - 250px);
+ }
+
+ .mobile-nav button {
+   background: transparent;
+   border: none;
+   color: white;
+ }
+
+ @media (max-width: 768px) {
+   .mobile-nav {
+       display: block;
+   }
+   .desktop-nav {
+       display: none;
+   }
+ }
 
 /***********************
       Hero section
 *************************/
 h1 {
   color: white;
+  font-family: 'Berkshire Swash', cursive;
 }
 
 p {
@@ -94,7 +135,7 @@ p {
 
 .hero{
   background-image: url('../img/camera.jpg');
-  height: 1000px;
+  height: 800px;
   width: 100%;
   background-size: cover;
 
@@ -120,15 +161,97 @@ p {
   padding: 10px;
 }
 
+
+@media (max-width: 700px) {
+  .hero {
+    background-image: url('../img/camera.jpg');
+  }
+  .hero-text-container {
+    padding: 5em;
+    padding-top: 0px;
+  }
+  .hero-text-container h1 {
+   font-size: 32px;
+   margin-bottom: 20px;
+  }
+  .hero-tex-container p {
+    font-size: 16px;
+    margin-bottom: 40px;
+  }
+  .hero-text-container .button {
+    margin-bottom: 40px;
+
+  }
+}
 /****************
      Section
 *****************/
 
 section {
   background-color: black;
-  height: 400px;
+  height: 420px;
 }
 
+.profile {
+    border-radius: 50%;
+    border:5px solid #fff;
+    max-width:550px;
+    height:inherit;
+    width:expression(document.body.clientWidth&gt;550?"550px""auto"); /*若圖片大於550px就調整*/
+    overflow:hidden;       /*超過不顯示*/
+    max-width: 300px;
+    max-height: 300px;
+}
+.image {
+    padding-left: 80px;
+    display: inline-block;
+      text-align: center;
+}
+.img-container {
+  padding-top: 20px;
+  padding-left: 50px;
+}
+
+.img-container p {
+  font-family: 'Russo One', sans-serif;
+  padding-top: 10px;
+  font-size: 20px;
+}
+
+@media (max-width: 700px) {
+  section {
+    background-color: black;
+    height: 1200px;
+  }
+
+  .profile {
+      border-radius: 50%;
+      border:5px solid #fff;
+      max-width:550px;
+      height:inherit;
+      width:expression(document.body.clientWidth&gt;550?"550px""auto"); /*若圖片大於550px就調整*/
+      overflow:hidden;       /*超過不顯示*/
+      max-width: 300px;
+      max-height: 300px;
+
+  }
+  .image {
+      padding-left: 80px;
+      justify-content: center;
+      text-align: center;
+  }
+  .img-container {
+    padding-top: 50px;
+    margin-left:50px;
+    width: calc(100% - 100px);
+  }
+
+  .img-container p {
+    font-family: 'Russo One', sans-serif;
+    padding-top: 10px;
+    font-size: 20px;
+  }
+}
 /*********************
    Footer Section
 **********************/
@@ -141,15 +264,49 @@ footer {
 .footer-container {
   display: inline-block;
   padding: 30px;
-  text-align: center;
-  font-family: 'Berkshire Swash', cursive;
+  text-align: left;
+  vertical-align:text-top;
+  font-family: 'Patua One', cursive;
+  font-size: 20px;
 }
 
 .container h4 {
   color: white;
+
 }
 
-.container a {
+.footer-container a {
   text-decoration: none;
   /* color: #222; */
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+}
+
+@media (max-width: 700px) {
+  footer {
+    background-color: #111;
+    height: 1000px;
+    width: 100%;
+  }
+
+  .footer-container {
+    display: inline-block;
+    padding: 50px;
+    text-align: left;
+    vertical-align:text-top;
+    font-family: 'Patua One', cursive;
+    font-size: 20px;
+  }
+
+  .container h4 {
+    color: white;
+
+  }
+
+  .footer-container a {
+    text-decoration: none;
+    /* color: #222; */
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+  }
 }
